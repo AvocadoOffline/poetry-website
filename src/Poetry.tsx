@@ -1,4 +1,4 @@
-import { Row, Col } from 'antd'
+import { Row, Col, Divider } from 'antd'
 import type { PoetryProps } from './poems'
 import './App.css'
 
@@ -10,7 +10,8 @@ export const Poetry = ({ title, date, poetry, description }: PoetryProps) => {
         </Row>
         <Row gutter={12}>
             <Col
-                span={12}
+                xs={24}
+                md={12}
                 className="poetry-content"
                 style={{
                     textAlign: 'left',
@@ -23,8 +24,10 @@ export const Poetry = ({ title, date, poetry, description }: PoetryProps) => {
                     <div key={i}>{sentence}</div>
                 ))}
             </Col>
+            <Divider className="poetry-divider" dashed style={{ borderColor: "rgba(255, 255, 255, 0.11)", margin: "50px 0" }}/>
             <Col
-                span={12}
+                xs={24}
+                md={12}
                 className="poetry-content"
                 style={{
                     display: 'flex',
