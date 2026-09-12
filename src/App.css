@@ -1,0 +1,47 @@
+/* src/App.css */
+
+:root {
+  --font-poetry: 'Source Code Pro', monospace;
+  /*                        ^^^^^^^^^ use the correct generic fallback */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-poetry);
+}
+
+.poetry-title {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.poetry-content {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.781);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.header {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.781);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.header > a > div {
+  margin-bottom: 5px;
+}
+
+.footer {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.11);
+  font-weight: 400;
+  line-height: 1.8;
+}
